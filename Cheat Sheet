@@ -1,0 +1,82 @@
+Check list of packages in conda
+    Conda List
+    
+Update all packages in the default environment
+    conda upgrade conda
+    conda upgrade --all
+    
+# Check if pip is already installed, by running this command on Terminal/Anaconda Prompt
+    pip --version
+
+# Once you have conda installed, run the command below on Terminal/Anaconda Prompt
+    conda install pip
+    
+Install a package into the environment
+    conda install PACKAGE_NAME
+    conda install numpy scipy pandas
+    It's also possible to specify which version of a package you want by adding the version number such as conda install numpy=1.10.
+    
+Remove Packages
+    conda remove PACKAGE_NAME
+    
+Search a package to install
+    conda search '*beautifulsoup*'
+    
+Create a development environment
+    conda create -n my_env python=3.7 numpy Keras
+    
+Activate an environment
+  # For  conda 4.6 and later versions on Linux/macOS/Windows, use
+    conda activate my_env
+  #For conda versions prior to 4.6 on Linux/macOS, use 
+    source activate my_env
+  #For conda versions prior to 4.6 on Windows, use 
+    activate my_env
+    
+Deactivate environment
+  # For  conda 4.6 and later versions on Linux/macOS/Windows, use
+    conda deactivate
+  #For conda versions prior to 4.6 on Linux/macOS, use 
+    source deactivate
+  #For conda versions prior to 4.6 on Windows, use 
+    deactivate
+    
+Saving and Loading Environments
+    conda env export
+    
+Write environment to file
+    conda env export > environment.yaml
+    
+To create an environment from an environment file, use the following command:
+    conda env create -f environment.yaml    
+    
+# If the environment is not activated
+    conda list -n env_name
+
+# If the environment is activated
+    conda list
+
+# To see if a specific package, say `scipy` is installed in an environment
+    conda list -n env_name scipy    
+    
+Remove environment
+    conda env remove -n env_name
+    
+# First, verify if you have Python and conda installed
+# If the command below shows an error, try installing it first using `conda install python=3`
+    python --version
+    conda --version
+
+# Use either of the commands below to install notebook
+    conda install jupyter notebook
+    conda install -c conda-forge notebook    
+    
+# First, verify if you have pip installed. In recent versions of Python 3 >=3.4, pip comes preinstalled. 
+# If the `pip` command below shows an error, try installing pip from https://pip.pypa.io/en/stable/installing/ 
+    python --version
+    pip --version
+
+
+# Use either of the commands below to install notebook
+    pip install notebook
+    pip install jupyter notebook    
