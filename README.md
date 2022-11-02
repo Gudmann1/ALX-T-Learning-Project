@@ -1,4 +1,4 @@
-# Twitter WeRateDogs Projects
+# Twitter WeRateDogs Project
 
 This sheet contains information on the twitter project.
 
@@ -13,3 +13,5 @@ This sheet contains information on the twitter project.
 `image_prediction1`folder holders a file downloaded from a web scraping activity.
 
 `tweet-json.txt` is a named output from twitter API.
+
+`act_report.ipynb` is a summary of the actions taken to complete project.
